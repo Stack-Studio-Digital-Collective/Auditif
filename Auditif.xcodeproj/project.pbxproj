@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220DB2012C55717A00FF96C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220DB2002C55717A00FF96C9 /* ContentView.swift */; };
+		220DB2052C55717C00FF96C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220DB2042C55717C00FF96C9 /* Assets.xcassets */; };
+		220DB2082C55717C00FF96C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220DB2072C55717C00FF96C9 /* Preview Assets.xcassets */; };
+		220DB2132C55717C00FF96C9 /* AuditifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220DB2122C55717C00FF96C9 /* AuditifTests.swift */; };
+		220DB21D2C55717C00FF96C9 /* AuditifUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220DB21C2C55717C00FF96C9 /* AuditifUITests.swift */; };
+		220DB21F2C55717C00FF96C9 /* AuditifUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220DB21E2C55717C00FF96C9 /* AuditifUITestsLaunchTests.swift */; };
+		220DB22D2C5571FB00FF96C9 /* SwiftWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = 220DB22C2C5571FB00FF96C9 /* SwiftWhisper */; };
+		220DB2302C55736F00FF96C9 /* ggml-small.en-encoder.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 220DB22F2C55736F00FF96C9 /* ggml-small.en-encoder.mlmodelc */; };
+		220DB2322C55747900FF96C9 /* ggml-small.en.bin in Resources */ = {isa = PBXBuildFile; fileRef = 220DB2312C55747900FF96C9 /* ggml-small.en.bin */; };
+		22863E372C55BF8400E8120C /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 22863E362C55BF8400E8120C /* AudioKit */; };
+		22863E3C2C56C02300E8120C /* AuditifWhisperDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E3B2C56C02300E8120C /* AuditifWhisperDelegate.swift */; };
+		22863E3E2C56DBB300E8120C /* IdentifiableSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E3D2C56DBB300E8120C /* IdentifiableSegment.swift */; };
+		22863E402C56DBF400E8120C /* TranscriptionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E3F2C56DBF400E8120C /* TranscriptionStore.swift */; };
+		22863E422C56DC0100E8120C /* Transcription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E412C56DC0100E8120C /* Transcription.swift */; };
+		22863E442C56DF4200E8120C /* TranscriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E432C56DF4200E8120C /* TranscriptionDetail.swift */; };
+		22863E462C56E79F00E8120C /* ActiveTranscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E452C56E79F00E8120C /* ActiveTranscription.swift */; };
+		22863E4A2C56E8C600E8120C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E492C56E8C600E8120C /* Utils.swift */; };
+		22DD193A2C571D8300DF90C0 /* AuditifApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD19392C571D8300DF90C0 /* AuditifApp.swift */; };
+		22DD193E2C57311A00DF90C0 /* AuditifColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD193D2C57311A00DF90C0 /* AuditifColors.swift */; };
+		22DD19402C5732F900DF90C0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 22DD193F2C5732F900DF90C0 /* .gitkeep */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		220DB20F2C55717C00FF96C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220DB1F32C55717A00FF96C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220DB1FA2C55717A00FF96C9;
+			remoteInfo = SmartTranscriber;
+		};
+		220DB2192C55717C00FF96C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220DB1F32C55717A00FF96C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 220DB1FA2C55717A00FF96C9;
+			remoteInfo = SmartTranscriber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220DB1FB2C55717A00FF96C9 /* Auditif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Auditif.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		220DB2002C55717A00FF96C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		220DB2042C55717C00FF96C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		220DB2072C55717C00FF96C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		220DB2092C55717C00FF96C9 /* Auditif.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Auditif.entitlements; sourceTree = "<group>"; };
+		220DB20E2C55717C00FF96C9 /* AuditifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuditifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220DB2122C55717C00FF96C9 /* AuditifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditifTests.swift; sourceTree = "<group>"; };
+		220DB2182C55717C00FF96C9 /* AuditifUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuditifUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		220DB21C2C55717C00FF96C9 /* AuditifUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditifUITests.swift; sourceTree = "<group>"; };
+		220DB21E2C55717C00FF96C9 /* AuditifUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditifUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		220DB22F2C55736F00FF96C9 /* ggml-small.en-encoder.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "ggml-small.en-encoder.mlmodelc"; sourceTree = "<group>"; };
+		220DB2312C55747900FF96C9 /* ggml-small.en.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ggml-small.en.bin"; sourceTree = "<group>"; };
+		22863E3B2C56C02300E8120C /* AuditifWhisperDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditifWhisperDelegate.swift; sourceTree = "<group>"; };
+		22863E3D2C56DBB300E8120C /* IdentifiableSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableSegment.swift; sourceTree = "<group>"; };
+		22863E3F2C56DBF400E8120C /* TranscriptionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionStore.swift; sourceTree = "<group>"; };
+		22863E412C56DC0100E8120C /* Transcription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcription.swift; sourceTree = "<group>"; };
+		22863E432C56DF4200E8120C /* TranscriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionDetail.swift; sourceTree = "<group>"; };
+		22863E452C56E79F00E8120C /* ActiveTranscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTranscription.swift; sourceTree = "<group>"; };
+		22863E492C56E8C600E8120C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		22DD19392C571D8300DF90C0 /* AuditifApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditifApp.swift; sourceTree = "<group>"; };
+		22DD193D2C57311A00DF90C0 /* AuditifColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditifColors.swift; sourceTree = "<group>"; };
+		22DD193F2C5732F900DF90C0 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		22DD19412C57351D00DF90C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		220DB1F82C55717A00FF96C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22863E372C55BF8400E8120C /* AudioKit in Frameworks */,
+				220DB22D2C5571FB00FF96C9 /* SwiftWhisper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220DB20B2C55717C00FF96C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220DB2152C55717C00FF96C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220DB1F22C55717A00FF96C9 = {
+			isa = PBXGroup;
+			children = (
+				22DD19412C57351D00DF90C0 /* README.md */,
+				220DB1FD2C55717A00FF96C9 /* Auditif */,
+				220DB2112C55717C00FF96C9 /* AuditifTests */,
+				220DB21B2C55717C00FF96C9 /* AuditifUITests */,
+				220DB1FC2C55717A00FF96C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		220DB1FC2C55717A00FF96C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				220DB1FB2C55717A00FF96C9 /* Auditif.app */,
+				220DB20E2C55717C00FF96C9 /* AuditifTests.xctest */,
+				220DB2182C55717C00FF96C9 /* AuditifUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		220DB1FD2C55717A00FF96C9 /* Auditif */ = {
+			isa = PBXGroup;
+			children = (
+				220DB22E2C55735B00FF96C9 /* Models */,
+				22DD19392C571D8300DF90C0 /* AuditifApp.swift */,
+				220DB2002C55717A00FF96C9 /* ContentView.swift */,
+				220DB2042C55717C00FF96C9 /* Assets.xcassets */,
+				220DB2092C55717C00FF96C9 /* Auditif.entitlements */,
+				220DB2062C55717C00FF96C9 /* Preview Content */,
+				22863E3B2C56C02300E8120C /* AuditifWhisperDelegate.swift */,
+				22863E3D2C56DBB300E8120C /* IdentifiableSegment.swift */,
+				22863E3F2C56DBF400E8120C /* TranscriptionStore.swift */,
+				22863E412C56DC0100E8120C /* Transcription.swift */,
+				22863E432C56DF4200E8120C /* TranscriptionDetail.swift */,
+				22863E452C56E79F00E8120C /* ActiveTranscription.swift */,
+				22863E492C56E8C600E8120C /* Utils.swift */,
+				22DD193D2C57311A00DF90C0 /* AuditifColors.swift */,
+			);
+			path = Auditif;
+			sourceTree = "<group>";
+		};
+		220DB2062C55717C00FF96C9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				220DB2072C55717C00FF96C9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		220DB2112C55717C00FF96C9 /* AuditifTests */ = {
+			isa = PBXGroup;
+			children = (
+				220DB2122C55717C00FF96C9 /* AuditifTests.swift */,
+			);
+			path = AuditifTests;
+			sourceTree = "<group>";
+		};
+		220DB21B2C55717C00FF96C9 /* AuditifUITests */ = {
+			isa = PBXGroup;
+			children = (
+				220DB21C2C55717C00FF96C9 /* AuditifUITests.swift */,
+				220DB21E2C55717C00FF96C9 /* AuditifUITestsLaunchTests.swift */,
+			);
+			path = AuditifUITests;
+			sourceTree = "<group>";
+		};
+		220DB22E2C55735B00FF96C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				220DB22F2C55736F00FF96C9 /* ggml-small.en-encoder.mlmodelc */,
+				220DB2312C55747900FF96C9 /* ggml-small.en.bin */,
+				22DD193F2C5732F900DF90C0 /* .gitkeep */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		220DB1FA2C55717A00FF96C9 /* Auditif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220DB2222C55717C00FF96C9 /* Build configuration list for PBXNativeTarget "Auditif" */;
+			buildPhases = (
+				220DB1F72C55717A00FF96C9 /* Sources */,
+				220DB1F82C55717A00FF96C9 /* Frameworks */,
+				220DB1F92C55717A00FF96C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Auditif;
+			packageProductDependencies = (
+				220DB22C2C5571FB00FF96C9 /* SwiftWhisper */,
+				22863E362C55BF8400E8120C /* AudioKit */,
+			);
+			productName = SmartTranscriber;
+			productReference = 220DB1FB2C55717A00FF96C9 /* Auditif.app */;
+			productType = "com.apple.product-type.application";
+		};
+		220DB20D2C55717C00FF96C9 /* AuditifTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220DB2252C55717C00FF96C9 /* Build configuration list for PBXNativeTarget "AuditifTests" */;
+			buildPhases = (
+				220DB20A2C55717C00FF96C9 /* Sources */,
+				220DB20B2C55717C00FF96C9 /* Frameworks */,
+				220DB20C2C55717C00FF96C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220DB2102C55717C00FF96C9 /* PBXTargetDependency */,
+			);
+			name = AuditifTests;
+			productName = SmartTranscriberTests;
+			productReference = 220DB20E2C55717C00FF96C9 /* AuditifTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		220DB2172C55717C00FF96C9 /* AuditifUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 220DB2282C55717C00FF96C9 /* Build configuration list for PBXNativeTarget "AuditifUITests" */;
+			buildPhases = (
+				220DB2142C55717C00FF96C9 /* Sources */,
+				220DB2152C55717C00FF96C9 /* Frameworks */,
+				220DB2162C55717C00FF96C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				220DB21A2C55717C00FF96C9 /* PBXTargetDependency */,
+			);
+			name = AuditifUITests;
+			productName = SmartTranscriberUITests;
+			productReference = 220DB2182C55717C00FF96C9 /* AuditifUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		220DB1F32C55717A00FF96C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					220DB1FA2C55717A00FF96C9 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					220DB20D2C55717C00FF96C9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 220DB1FA2C55717A00FF96C9;
+					};
+					220DB2172C55717C00FF96C9 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 220DB1FA2C55717A00FF96C9;
+					};
+				};
+			};
+			buildConfigurationList = 220DB1F62C55717A00FF96C9 /* Build configuration list for PBXProject "Auditif" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 220DB1F22C55717A00FF96C9;
+			packageReferences = (
+				220DB22B2C5571FB00FF96C9 /* XCRemoteSwiftPackageReference "SwiftWhisper" */,
+				22863E352C55BF8400E8120C /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
+			productRefGroup = 220DB1FC2C55717A00FF96C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				220DB1FA2C55717A00FF96C9 /* Auditif */,
+				220DB20D2C55717C00FF96C9 /* AuditifTests */,
+				220DB2172C55717C00FF96C9 /* AuditifUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220DB1F92C55717A00FF96C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220DB2302C55736F00FF96C9 /* ggml-small.en-encoder.mlmodelc in Resources */,
+				220DB2082C55717C00FF96C9 /* Preview Assets.xcassets in Resources */,
+				22DD19402C5732F900DF90C0 /* .gitkeep in Resources */,
+				220DB2322C55747900FF96C9 /* ggml-small.en.bin in Resources */,
+				220DB2052C55717C00FF96C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220DB20C2C55717C00FF96C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220DB2162C55717C00FF96C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		220DB1F72C55717A00FF96C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22863E462C56E79F00E8120C /* ActiveTranscription.swift in Sources */,
+				22DD193E2C57311A00DF90C0 /* AuditifColors.swift in Sources */,
+				220DB2012C55717A00FF96C9 /* ContentView.swift in Sources */,
+				22863E422C56DC0100E8120C /* Transcription.swift in Sources */,
+				22863E4A2C56E8C600E8120C /* Utils.swift in Sources */,
+				22863E3C2C56C02300E8120C /* AuditifWhisperDelegate.swift in Sources */,
+				22863E3E2C56DBB300E8120C /* IdentifiableSegment.swift in Sources */,
+				22863E402C56DBF400E8120C /* TranscriptionStore.swift in Sources */,
+				22DD193A2C571D8300DF90C0 /* AuditifApp.swift in Sources */,
+				22863E442C56DF4200E8120C /* TranscriptionDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220DB20A2C55717C00FF96C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220DB2132C55717C00FF96C9 /* AuditifTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		220DB2142C55717C00FF96C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220DB21F2C55717C00FF96C9 /* AuditifUITestsLaunchTests.swift in Sources */,
+				220DB21D2C55717C00FF96C9 /* AuditifUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		220DB2102C55717C00FF96C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220DB1FA2C55717A00FF96C9 /* Auditif */;
+			targetProxy = 220DB20F2C55717C00FF96C9 /* PBXContainerItemProxy */;
+		};
+		220DB21A2C55717C00FF96C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 220DB1FA2C55717A00FF96C9 /* Auditif */;
+			targetProxy = 220DB2192C55717C00FF96C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		220DB2202C55717C00FF96C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		220DB2212C55717C00FF96C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		220DB2232C55717C00FF96C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Auditif/Auditif.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auditif/Preview Content\"";
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.casualsweatpants.Auditif;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		220DB2242C55717C00FF96C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Auditif/Auditif.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auditif/Preview Content\"";
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.casualsweatpants.Auditif;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		220DB2262C55717C00FF96C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.casualsweatpants.SmartTranscriberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auditif.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auditif";
+			};
+			name = Debug;
+		};
+		220DB2272C55717C00FF96C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.casualsweatpants.SmartTranscriberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auditif.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auditif";
+			};
+			name = Release;
+		};
+		220DB2292C55717C00FF96C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.casualsweatpants.SmartTranscriberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SmartTranscriber;
+			};
+			name = Debug;
+		};
+		220DB22A2C55717C00FF96C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.casualsweatpants.SmartTranscriberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SmartTranscriber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		220DB1F62C55717A00FF96C9 /* Build configuration list for PBXProject "Auditif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220DB2202C55717C00FF96C9 /* Debug */,
+				220DB2212C55717C00FF96C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220DB2222C55717C00FF96C9 /* Build configuration list for PBXNativeTarget "Auditif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220DB2232C55717C00FF96C9 /* Debug */,
+				220DB2242C55717C00FF96C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220DB2252C55717C00FF96C9 /* Build configuration list for PBXNativeTarget "AuditifTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220DB2262C55717C00FF96C9 /* Debug */,
+				220DB2272C55717C00FF96C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		220DB2282C55717C00FF96C9 /* Build configuration list for PBXNativeTarget "AuditifUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220DB2292C55717C00FF96C9 /* Debug */,
+				220DB22A2C55717C00FF96C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		220DB22B2C5571FB00FF96C9 /* XCRemoteSwiftPackageReference "SwiftWhisper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exPHAT/SwiftWhisper.git";
+			requirement = {
+				kind = revision;
+				revision = deb1cb6a27256c7b01f5d3d2e7dc1dcc330b5d01;
+			};
+		};
+		22863E352C55BF8400E8120C /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		220DB22C2C5571FB00FF96C9 /* SwiftWhisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 220DB22B2C5571FB00FF96C9 /* XCRemoteSwiftPackageReference "SwiftWhisper" */;
+			productName = SwiftWhisper;
+		};
+		22863E362C55BF8400E8120C /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22863E352C55BF8400E8120C /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 220DB1F32C55717A00FF96C9 /* Project object */;
+}

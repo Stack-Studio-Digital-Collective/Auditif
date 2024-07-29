@@ -1,0 +1,97 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+
+# Xcode iOS
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode macOS
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata
+!*.xcodeproj/xcshareddata/xcschemes
+!*.xcworkspace/contents.xcworkspacedata
+!*.xcworkspace/xcshareddata
+!*.xcworkspace/xcshareddata/xcschemes
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+project.xcworkspace/
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/report.json
+
+# Code Injection
+ci/
+
+# macOS app extensions
+*.appex/*
+!*.appex/Info.plist
+!*.appex/Contents
+!*.appex/Contents/Info.plist
+
+# Other macOS specific
+*.playground
+*.swiftpm/
+*.docc/
+*.swiftpm/xcode/
+*.swiftpm/xcode/xcschemes
+*.swiftpm/xcode/xcschemes/xcscheme.xml
+
+# Exclude everything in the Models folder except .gitkeep
+Auditif/Models/*
+!Auditif/Models/.gitkeep
+
