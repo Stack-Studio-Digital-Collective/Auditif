@@ -24,6 +24,14 @@
 		22863E442C56DF4200E8120C /* TranscriptionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E432C56DF4200E8120C /* TranscriptionDetail.swift */; };
 		22863E462C56E79F00E8120C /* ActiveTranscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E452C56E79F00E8120C /* ActiveTranscription.swift */; };
 		22863E4A2C56E8C600E8120C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22863E492C56E8C600E8120C /* Utils.swift */; };
+		22C93E3C2C59CB2F0030C49C /* Auditif_MobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C93E3B2C59CB2F0030C49C /* Auditif_MobileApp.swift */; };
+		22C93E3E2C59CB2F0030C49C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C93E3D2C59CB2F0030C49C /* ContentView.swift */; };
+		22C93E402C59CB2F0030C49C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C93E3F2C59CB2F0030C49C /* Item.swift */; };
+		22C93E422C59CB310030C49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C93E412C59CB310030C49C /* Assets.xcassets */; };
+		22C93E452C59CB310030C49C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C93E442C59CB310030C49C /* Preview Assets.xcassets */; };
+		22C93E4F2C59CB320030C49C /* Auditif_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C93E4E2C59CB320030C49C /* Auditif_MobileTests.swift */; };
+		22C93E592C59CB320030C49C /* Auditif_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C93E582C59CB320030C49C /* Auditif_MobileUITests.swift */; };
+		22C93E5B2C59CB320030C49C /* Auditif_MobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C93E5A2C59CB320030C49C /* Auditif_MobileUITestsLaunchTests.swift */; };
 		22DD193A2C571D8300DF90C0 /* AuditifApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD19392C571D8300DF90C0 /* AuditifApp.swift */; };
 		22DD193E2C57311A00DF90C0 /* AuditifColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DD193D2C57311A00DF90C0 /* AuditifColors.swift */; };
 		22DD19402C5732F900DF90C0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 22DD193F2C5732F900DF90C0 /* .gitkeep */; };
@@ -43,6 +51,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 220DB1FA2C55717A00FF96C9;
 			remoteInfo = SmartTranscriber;
+		};
+		22C93E4B2C59CB320030C49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220DB1F32C55717A00FF96C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C93E382C59CB2F0030C49C;
+			remoteInfo = "Auditif Mobile";
+		};
+		22C93E552C59CB320030C49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 220DB1F32C55717A00FF96C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C93E382C59CB2F0030C49C;
+			remoteInfo = "Auditif Mobile";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,6 +88,17 @@
 		22863E432C56DF4200E8120C /* TranscriptionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionDetail.swift; sourceTree = "<group>"; };
 		22863E452C56E79F00E8120C /* ActiveTranscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTranscription.swift; sourceTree = "<group>"; };
 		22863E492C56E8C600E8120C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		22C93E392C59CB2F0030C49C /* Auditif Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auditif Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C93E3B2C59CB2F0030C49C /* Auditif_MobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auditif_MobileApp.swift; sourceTree = "<group>"; };
+		22C93E3D2C59CB2F0030C49C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22C93E3F2C59CB2F0030C49C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		22C93E412C59CB310030C49C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22C93E442C59CB310030C49C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22C93E4A2C59CB320030C49C /* Auditif MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Auditif MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C93E4E2C59CB320030C49C /* Auditif_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auditif_MobileTests.swift; sourceTree = "<group>"; };
+		22C93E542C59CB320030C49C /* Auditif MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Auditif MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C93E582C59CB320030C49C /* Auditif_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auditif_MobileUITests.swift; sourceTree = "<group>"; };
+		22C93E5A2C59CB320030C49C /* Auditif_MobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auditif_MobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		22DD19392C571D8300DF90C0 /* AuditifApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditifApp.swift; sourceTree = "<group>"; };
 		22DD193D2C57311A00DF90C0 /* AuditifColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditifColors.swift; sourceTree = "<group>"; };
 		22DD193F2C5732F900DF90C0 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -96,6 +129,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22C93E362C59CB2F0030C49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C93E472C59CB320030C49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C93E512C59CB320030C49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +160,9 @@
 				220DB1FD2C55717A00FF96C9 /* Auditif */,
 				220DB2112C55717C00FF96C9 /* AuditifTests */,
 				220DB21B2C55717C00FF96C9 /* AuditifUITests */,
+				22C93E3A2C59CB2F0030C49C /* Auditif Mobile */,
+				22C93E4D2C59CB320030C49C /* Auditif MobileTests */,
+				22C93E572C59CB320030C49C /* Auditif MobileUITests */,
 				220DB1FC2C55717A00FF96C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,6 +173,9 @@
 				220DB1FB2C55717A00FF96C9 /* Auditif.app */,
 				220DB20E2C55717C00FF96C9 /* AuditifTests.xctest */,
 				220DB2182C55717C00FF96C9 /* AuditifUITests.xctest */,
+				22C93E392C59CB2F0030C49C /* Auditif Mobile.app */,
+				22C93E4A2C59CB320030C49C /* Auditif MobileTests.xctest */,
+				22C93E542C59CB320030C49C /* Auditif MobileUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +234,43 @@
 				22DD193F2C5732F900DF90C0 /* .gitkeep */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		22C93E3A2C59CB2F0030C49C /* Auditif Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				22C93E3B2C59CB2F0030C49C /* Auditif_MobileApp.swift */,
+				22C93E3D2C59CB2F0030C49C /* ContentView.swift */,
+				22C93E3F2C59CB2F0030C49C /* Item.swift */,
+				22C93E412C59CB310030C49C /* Assets.xcassets */,
+				22C93E432C59CB310030C49C /* Preview Content */,
+			);
+			path = "Auditif Mobile";
+			sourceTree = "<group>";
+		};
+		22C93E432C59CB310030C49C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22C93E442C59CB310030C49C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22C93E4D2C59CB320030C49C /* Auditif MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				22C93E4E2C59CB320030C49C /* Auditif_MobileTests.swift */,
+			);
+			path = "Auditif MobileTests";
+			sourceTree = "<group>";
+		};
+		22C93E572C59CB320030C49C /* Auditif MobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22C93E582C59CB320030C49C /* Auditif_MobileUITests.swift */,
+				22C93E5A2C59CB320030C49C /* Auditif_MobileUITestsLaunchTests.swift */,
+			);
+			path = "Auditif MobileUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +333,59 @@
 			productReference = 220DB2182C55717C00FF96C9 /* AuditifUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		22C93E382C59CB2F0030C49C /* Auditif Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C93E622C59CB320030C49C /* Build configuration list for PBXNativeTarget "Auditif Mobile" */;
+			buildPhases = (
+				22C93E352C59CB2F0030C49C /* Sources */,
+				22C93E362C59CB2F0030C49C /* Frameworks */,
+				22C93E372C59CB2F0030C49C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Auditif Mobile";
+			productName = "Auditif Mobile";
+			productReference = 22C93E392C59CB2F0030C49C /* Auditif Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22C93E492C59CB320030C49C /* Auditif MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C93E632C59CB320030C49C /* Build configuration list for PBXNativeTarget "Auditif MobileTests" */;
+			buildPhases = (
+				22C93E462C59CB320030C49C /* Sources */,
+				22C93E472C59CB320030C49C /* Frameworks */,
+				22C93E482C59CB320030C49C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C93E4C2C59CB320030C49C /* PBXTargetDependency */,
+			);
+			name = "Auditif MobileTests";
+			productName = "Auditif MobileTests";
+			productReference = 22C93E4A2C59CB320030C49C /* Auditif MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22C93E532C59CB320030C49C /* Auditif MobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C93E642C59CB320030C49C /* Build configuration list for PBXNativeTarget "Auditif MobileUITests" */;
+			buildPhases = (
+				22C93E502C59CB320030C49C /* Sources */,
+				22C93E512C59CB320030C49C /* Frameworks */,
+				22C93E522C59CB320030C49C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C93E562C59CB320030C49C /* PBXTargetDependency */,
+			);
+			name = "Auditif MobileUITests";
+			productName = "Auditif MobileUITests";
+			productReference = 22C93E542C59CB320030C49C /* Auditif MobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -256,6 +406,17 @@
 					220DB2172C55717C00FF96C9 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 220DB1FA2C55717A00FF96C9;
+					};
+					22C93E382C59CB2F0030C49C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					22C93E492C59CB320030C49C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 22C93E382C59CB2F0030C49C;
+					};
+					22C93E532C59CB320030C49C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 22C93E382C59CB2F0030C49C;
 					};
 				};
 			};
@@ -279,6 +440,9 @@
 				220DB1FA2C55717A00FF96C9 /* Auditif */,
 				220DB20D2C55717C00FF96C9 /* AuditifTests */,
 				220DB2172C55717C00FF96C9 /* AuditifUITests */,
+				22C93E382C59CB2F0030C49C /* Auditif Mobile */,
+				22C93E492C59CB320030C49C /* Auditif MobileTests */,
+				22C93E532C59CB320030C49C /* Auditif MobileUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,6 +468,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		220DB2162C55717C00FF96C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C93E372C59CB2F0030C49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C93E452C59CB310030C49C /* Preview Assets.xcassets in Resources */,
+				22C93E422C59CB310030C49C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C93E482C59CB320030C49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C93E522C59CB320030C49C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,6 +534,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22C93E352C59CB2F0030C49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C93E3E2C59CB2F0030C49C /* ContentView.swift in Sources */,
+				22C93E402C59CB2F0030C49C /* Item.swift in Sources */,
+				22C93E3C2C59CB2F0030C49C /* Auditif_MobileApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C93E462C59CB320030C49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C93E4F2C59CB320030C49C /* Auditif_MobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C93E502C59CB320030C49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C93E592C59CB320030C49C /* Auditif_MobileUITests.swift in Sources */,
+				22C93E5B2C59CB320030C49C /* Auditif_MobileUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -359,6 +573,16 @@
 			isa = PBXTargetDependency;
 			target = 220DB1FA2C55717A00FF96C9 /* Auditif */;
 			targetProxy = 220DB2192C55717C00FF96C9 /* PBXContainerItemProxy */;
+		};
+		22C93E4C2C59CB320030C49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C93E382C59CB2F0030C49C /* Auditif Mobile */;
+			targetProxy = 22C93E4B2C59CB320030C49C /* PBXContainerItemProxy */;
+		};
+		22C93E562C59CB320030C49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C93E382C59CB2F0030C49C /* Auditif Mobile */;
+			targetProxy = 22C93E552C59CB320030C49C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -611,6 +835,153 @@
 			};
 			name = Release;
 		};
+		22C93E5C2C59CB320030C49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auditif Mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casualsweatpants.Auditif-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22C93E5D2C59CB320030C49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Auditif Mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casualsweatpants.Auditif-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22C93E5E2C59CB320030C49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casualsweatpants.Auditif-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auditif Mobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auditif Mobile";
+			};
+			name = Debug;
+		};
+		22C93E5F2C59CB320030C49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casualsweatpants.Auditif-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Auditif Mobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Auditif Mobile";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22C93E602C59CB320030C49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casualsweatpants.Auditif-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Auditif Mobile";
+			};
+			name = Debug;
+		};
+		22C93E612C59CB320030C49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W3U7M38D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.casualsweatpants.Auditif-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Auditif Mobile";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -646,6 +1017,33 @@
 			buildConfigurations = (
 				220DB2292C55717C00FF96C9 /* Debug */,
 				220DB22A2C55717C00FF96C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C93E622C59CB320030C49C /* Build configuration list for PBXNativeTarget "Auditif Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C93E5C2C59CB320030C49C /* Debug */,
+				22C93E5D2C59CB320030C49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C93E632C59CB320030C49C /* Build configuration list for PBXNativeTarget "Auditif MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C93E5E2C59CB320030C49C /* Debug */,
+				22C93E5F2C59CB320030C49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C93E642C59CB320030C49C /* Build configuration list for PBXNativeTarget "Auditif MobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C93E602C59CB320030C49C /* Debug */,
+				22C93E612C59CB320030C49C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
