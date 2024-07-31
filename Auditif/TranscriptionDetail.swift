@@ -101,13 +101,13 @@ struct TranscriptionDetail: View {
     
     func formatSeconds(seconds: Double) -> String {
         if seconds > 60 {
-            let minutes = seconds / 60
+            let minutes = Int(seconds / 60)
             let remainingSeconds = seconds.truncatingRemainder(dividingBy: 60)
             
-            
+            let formattedMinutes = String(format: "%d", minutes)
             let formattedSeconds = String(format: "%.3f", remainingSeconds)
             
-            return "\(minutes) minutes and \(formattedSeconds) seconds"
+            return "\(formattedMinutes) minutes and \(formattedSeconds) seconds"
         } else {
             let formattedSeconds = String(format: "%.3f", seconds)
             return "\(formattedSeconds) seconds"
