@@ -88,6 +88,8 @@ struct ActiveTranscription: View {
     func initialize() {
         self.progress.reset()
         
+        var startup = DispatchTime.now()
+        
         transcriptionTask = Task {
             do {
 
@@ -104,18 +106,26 @@ struct ActiveTranscription: View {
                     return
                 }
                 
+                let elapsedNanoSeconds = DispatchTime.now().uptimeNanoseconds - startup.uptimeNanoseconds
+                let elapsedSeconds = Double(elapsedNanoSeconds) / 1_000_000_000
+                
                 let delegate = AuditifWhisperDelegate(progress: progress)
                 let whisper = Whisper(fromFileURL: modelURL)
                 
                 whisper.delegate = delegate
                 
-                try await convertAndTranscribe(whisper: whisper)
+                let (audioProcessing, transcription) = try await convertAndTranscribe(whisper: whisper)
                 
                 let _title = title.isEmpty ? generateTitle() : title
                 
                 transcriptionAdded(Transcription(
                     title: _title,
                     createdAt: Date.now,
+                    executionTime: ExecutionTime(
+                        startup: elapsedSeconds,
+                        audioProcessing: audioProcessing,
+                        transcription: transcription
+                    ),
                     segments: progress.segments
                 ))
             } catch {
@@ -134,24 +144,37 @@ struct ActiveTranscription: View {
         return "Transcription from \(df.string(from: Date.now))"
     }
     
-    func convertAndTranscribe(whisper: Whisper) async throws {
+    func convertAndTranscribe(whisper: Whisper) async throws -> (Double, Double) {
         guard let url = selectedFileURL else {
-            return
+            throw NSError()
         }
+        
+        var audioProcessing = DispatchTime.now()
         
         let floats = try await withCheckedThrowingContinuation { continuation in
             convertAudioFileToPCMArray(fileURL: url) { result in
                 continuation.resume(with: result)
             }
         }
+        
+        var elapsedNanoSeconds = DispatchTime.now().uptimeNanoseconds - audioProcessing.uptimeNanoseconds
+        let elapsedAuduioProcessingSeconds = Double(elapsedNanoSeconds) / 1_000_000_000
     
+        var transcription = DispatchTime.now()
+        
         let _ = try await whisper.transcribe(
             audioFrames: floats
         )
         
+        elapsedNanoSeconds = DispatchTime.now().uptimeNanoseconds - transcription.uptimeNanoseconds
+        let elapsedTranscriptionSeconds = Double(elapsedNanoSeconds) / 1_000_000_000
+        
+        
         DispatchQueue.main.async {
             loading = false
         }
+        
+        return (elapsedAuduioProcessingSeconds, elapsedTranscriptionSeconds)
     }
     
     func convertAudioFileToPCMArray(fileURL: URL, completionHandler: @escaping (Result<[Float], Error>) -> Void) {

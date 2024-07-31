@@ -26,7 +26,12 @@ struct ContentView: View {
     
     var activeTranscriptionBinding: Binding<Transcription> {
         Binding(
-            get: { self.activeTranscription ?? Transcription(title: "", createdAt: Date(), segments: []) },
+            get: { self.activeTranscription ?? Transcription(
+                title: "",
+                createdAt: Date(),
+                executionTime: nil,
+                segments: []
+            )},
             set: { newValue in
                 self.activeTranscription = newValue
                 if let index = self.transcriptions.firstIndex(where: { $0.id == newValue.id }) {
@@ -141,6 +146,9 @@ struct ContentView: View {
         @State var transcriptions = [Transcription(
             title: "My First Transcription",
             createdAt: Date.now,
+            executionTime: ExecutionTime(
+                startup: 4.1, audioProcessing: 1.0, transcription: 128
+            ),
             segments: [
                 IdentifiableSegment(startTime: 1, endTime: 1, text: "Some transcription started"),
                 IdentifiableSegment(startTime: 1, endTime: 1, text: "and kept going"),

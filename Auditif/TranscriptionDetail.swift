@@ -63,6 +63,33 @@ struct TranscriptionDetail: View {
             }
             .padding()
             
+            if transcription.executionTime != nil {
+                HStack(alignment: .top, spacing: 20) {
+                    VStack(alignment: .leading) {
+                        Text("Startup")
+                        Text(formatSeconds(seconds: transcription.executionTime!.startup))
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Audio Processing")
+                        Text(formatSeconds(seconds: transcription.executionTime!.audioProcessing))
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Transcription")
+                        Text(formatSeconds(seconds: transcription.executionTime!.transcription))
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Total")
+                        Text(formatSeconds(
+                            seconds: transcription.executionTime!.startup +
+                            transcription.executionTime!.audioProcessing +
+                            transcription.executionTime!.transcription
+                        ))
+                    }
+                }
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            
             List {
                 ForEach(transcription.segments) { segment in
                     Text(segment.text)
@@ -71,6 +98,21 @@ struct TranscriptionDetail: View {
         }
         .padding()
     }
+    
+    func formatSeconds(seconds: Double) -> String {
+        if seconds > 60 {
+            let minutes = seconds / 60
+            let remainingSeconds = seconds.truncatingRemainder(dividingBy: 60)
+            
+            
+            let formattedSeconds = String(format: "%.3f", remainingSeconds)
+            
+            return "\(minutes) minutes and \(formattedSeconds) seconds"
+        } else {
+            let formattedSeconds = String(format: "%.3f", seconds)
+            return "\(formattedSeconds) seconds"
+        }
+    }
 }
 
 #Preview {
@@ -78,6 +120,11 @@ struct TranscriptionDetail: View {
         @State var transcription = Transcription(
             title: "My First Transcription",
             createdAt: Date.now,
+            executionTime: ExecutionTime(
+                startup: 4.0,
+                audioProcessing: 5.1,
+                transcription: 8.4
+            ),
             segments: [
                 IdentifiableSegment(startTime: 1, endTime: 1, text: "Some transcription started"),
                 IdentifiableSegment(startTime: 1, endTime: 1, text: "and kept going"),
